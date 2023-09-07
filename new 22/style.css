@@ -1,0 +1,84 @@
+/* Your existing CSS code here */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.menu {
+    width: 50%;
+    float: left;
+    padding: 1rem;
+}
+
+.menu h2 {
+    border-bottom: 1px solid #ccc;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 1rem 0;
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.item img {
+    max-width: 100%; /* Ensures the image doesn't exceed the container width */
+    height: auto;    /* Maintains the image's aspect ratio */
+}
+
+.cart {
+    width: 50%;
+    float: left;
+    padding: 1rem;
+}
+
+.cart h2 {
+    border-bottom: 1px solid #ccc;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.cart button:hover {
+    background-color: #555;
+}
+
+/* Add styles to the item-container to make items display side by side */
+.item-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if the container width is too small */
+    justify-content: space-between; /* Distribute items evenly with space in between */
+}
+
+/* Style for individual menu items */
+.item {
+    flex: 0 0 calc(50% - 10px); /* Each item takes up 50% of the container width with 10px margin on each side */
+    margin-bottom: 20px; /* Add some space between each pair of items */
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}

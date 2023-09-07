@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Food Ordering</title>
+</head>
+<body>
+    <header>
+        <h1>Food Ordering</h1>
+    </header>
+    <section class="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li>
+                <div class="item-container">
+                <div class="item">
+                    <img src="burger.jpg" alt="Burger"  style="max-width: 300px; height: auto;">
+                    <h3>Burger</h3>
+                    <p>Delicious burger with fries.</p>
+                    <p>$5.99</p>
+                    <button onclick="addToCart('Burger', 5.99)">Add to Cart</button>
+                </div>
+            </li>
+            <!-- Add more menu items here -->
+            <!-- ... (previous menu items) ... -->
+<li>
+    <div class="item">
+        <img src="pasta.jpg" alt="Pasta"  style="max-width: 300px; height: auto;">
+        <h3>Pasta</h3>
+        <p>Delicious pasta with your choice of sauce.</p>
+        <p>$7.99</p>
+        <button onclick="addToCart('Pasta', 7.99)">Add to Cart</button>
+    </div>
+</li>
+<li>
+    <div class="item">
+        <img src="sushi.jpg" alt="Sushi"  style="max-width: 300px; height: auto;">
+        <h3>Sushi</h3>
+        <p>Fresh sushi rolls with a variety of fillings.</p>
+        <p>$12.99</p>
+        <button onclick="addToCart('Sushi', 12.99)">Add to Cart</button>
+    </div>
+</li>
+<li>
+    <div class="item">
+        <img src="salad.jpg" alt="Salad" style="max-width: 300px; height: auto;">
+        <h3>Salad</h3>
+        <p>Healthy and delicious salad with mixed greens.</p>
+        <p>$6.49</p>
+        <button onclick="addToCart('Salad', 6.49)">Add to Cart</button>
+    </div>
+</li>
+<li>
+    <div class="item">
+        <img src="pizzaa.jpg" alt="Pizza"  style="max-width: 300px; height: auto;">
+        <h3>Pizza</h3>
+        <p>Delicious pizza with a variety of toppings.</p>
+        <p>$14.99</p>
+        <button onclick="addToCart('Pizza', 14.99)">Add to Cart</button>
+    </div>
+</li>
+<li>
+    <div class="item">
+        <img src="shake.jpg" alt="Shake"  style="max-width: 300px; height: auto;">
+        <h3>Shake</h3>
+        <p>Creamy and indulgent milkshake with a variety of flavors.</p>
+        <p>$1.99</p>
+        <button onclick="addToCart('Shake', 1.99)">Add to Cart</button>
+    </div>
+</li>
+<li>
+    <div class="item">
+        <img src="ice-cream.jpg" alt="Ice Cream"  style="max-width: 300px; height: auto;">
+        <h3>Ice Cream</h3>
+        <p>Delicious ice cream with various flavors.</p>
+        <p>$4.49</p>
+        <button onclick="addToCart('Ice Cream', 4.49)">Add to Cart</button>
+    </div>
+</li>
+<li>
+    <div class="item">
+        <img src="coffee.jpg" alt="Coffee" style="max-width: 300px; height: auto;">
+        <h3>Coffee</h3>
+        <p>Hot or iced coffee made to order.</p>
+        <p>$2.99</p>
+        <button onclick="addToCart('Coffee', 2.99)">Add to Cart</button>
+    </div>
+</li>
+<li>
+    <div class="item">
+        <img src="sandwich.jpg" alt="Sandwich"  style="max-width: 300px; height: auto;">
+        <h3>Sandwich</h3>
+        <p>Classic sandwiches with your choice of fillings.</p>
+        <p>$8.49</p>
+        <button onclick="addToCart('Sandwich', 8.49)">Add to Cart</button>
+    </div>
+</li>
+<li>
+    <div class="item">
+        <img src="mojito.jpg" alt="Mojito"  style="max-width: 300px; height: auto;">
+        <h3>Mojito</h3>
+        <p>A classic cocktail made with white rum, lime juice, mint leaves, sugar, and soda water.</p>
+        <p>$5.99</p>
+        <button onclick="addToCart('Mojito', 5.99)">Add to Cart</button>
+    </div>
+</li>
+</div>
+<!-- ... (more menu items) ... -->
+
+        </ul>
+    </section>
+    <section class="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
